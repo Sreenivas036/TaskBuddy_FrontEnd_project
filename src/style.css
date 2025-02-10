@@ -1,0 +1,129 @@
+ .app{
+    text-align: center;
+    color: darkblue;
+ }
+
+.home {
+    padding: 20px;
+}
+
+/* Task Input and Button */
+.task-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.task-input {
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.add-task-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-task-button:hover {
+    background-color: gray;
+}
+
+/* Task Sections */
+.task-sections {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.task-section {
+    border-radius: 8px;
+    width: 30%;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Colors */
+.task-section:nth-child(1) { /* To-Do */
+    background-color: #ffcc80;
+    border: 2px solid #ffa726;
+}
+
+.task-section:nth-child(2) { /* Ongoing */
+    background-color: #81d4fa;
+    border: 2px solid #29b6f6;
+}
+
+.task-section:nth-child(3) { /* Completed */
+    background-color: #a5d6a7;
+    border: 2px solid #66bb6a;
+}
+
+.task-section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.task-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.task-section li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.task-section li.active-task {
+    padding: 20px;
+    font-size: 18px;
+    background-color: #f0f8ff;
+    transform: scale(1.05);
+    border-left: 4px solid #007bff;
+}
+
+.task-section button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.task-section button:hover {
+    opacity: 0.8;
+}
+
+/* Button Colors */
+.task-section:nth-child(1) button { /* To-Do */
+    background-color: #ff9800;
+    color: white;
+}
+
+.task-section:nth-child(2) button { /* Ongoing */
+    background-color: #0288d1;
+    color: white;
+}
+
+.task-section:nth-child(3) button { /* Completed */
+    background-color: #2e7d32;
+    color: white;
+}
